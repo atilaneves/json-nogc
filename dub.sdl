@@ -1,0 +1,20 @@
+name "json-nogc"
+targetType "library"
+
+dependency "nogc" version="~>0.1.1"
+
+
+configuration "library" {
+
+}
+
+
+configuration "unittest" {
+    targetType "executable"
+    targetPath "bin"
+    targetName "ut"
+    mainSourceFile "tests/main.d"
+    sourcePaths "tests"
+
+    dependency "unit-threaded" version="*"
+}
