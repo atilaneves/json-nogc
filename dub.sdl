@@ -1,7 +1,11 @@
 name "json-nogc"
 targetType "library"
+license "boost"
 
-dependency "nogc" version="~>0.1.1"
+dflags "-dip25" "-dip1000" "-dip1008"
+
+dependency "nogc" version="~>0.2.1"
+dependency "localimport" version="*"
 
 
 configuration "library" {
